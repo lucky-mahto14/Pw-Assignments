@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #133337;
+            color:white;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10%;
+        }
+        #fname{
+           margin-left: 35%;
+           height:40px;
+           width:30%;
+           border-radius: 10px;
+        }
+        .submit-btn{
+            text-align: center;
+            
+        }
+        .btn{
+            align-items: center;
+            height:30px;
+            width:65px;
+            border:2px solid rgb(123, 202, 6);
+            border-radius: 8px;
+        }
+        #printchat{
+            text-align: center;
+            font-size: 2.5rem;
+            color:lightcoral
+        }
+        .btn:hover{
+            background-color: yellow;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, Enter your name?</h1>
+    
+        <input type="text" placeholder="Lucky" name="name" id="fname">
+   
+    <p class="submit-btn">
+        <button class="btn" type="button" onclick="myfunction()">Submit</button>
+    </p>
+    <br>
+   <div id="printchat" ></div>
+    <script>
+        function myfunction(){
+           var inputbox=document.getElementById("fname").value;
+           document.getElementById("printchat").innerHTML= "Hello "+inputbox+" Welcome to my website!";
+           console.log(document.getElementById("fname").value)
+        }
+    </script>
+</body>
+</html>
