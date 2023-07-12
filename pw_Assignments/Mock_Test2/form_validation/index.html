@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Form Validation!</h1>
+    <form   action="" name="myform" onsubmit="return validation()" method="post">
+        <div class="formvalidation container" id="name">
+            Name: <input type="text" name="fname" ><span class="formerror nameError" style="color: red;" >   <b></b></span>
+        </div>
+        <div class="formvalidation" id="email" >
+            Email: <input type="email" name="email" ><span class="formerror emailError" style="color: red;">   <b></b></span>
+        </div>
+        <div class="formvalidation" id="phone" >
+            Phone Number: <input type="number" name="phone" ><span class="formerror nameError" style="color: red;">   <b></b></span>
+        </div>
+        <div class="formvalidation" id="password" >
+            Password: <input type="password" name="fpass"><span class="formerror nameError" style="color: red;">   <b></b></span>
+        </div>
+        <div class="formvalidation" id="confirmPassword">
+            Confirm Password: <input type="password" name="cpass" ><span class="formerror nameError" style="color: red;">   <b></b></span>
+        </div>
+        <div class="formvalidation" id="age">
+            Age: <input type="number" name="age" ><span class="formerror nameError" style="color: red;">   <b></b></span>
+        </div>
+        <div class="formvalidation" id="gender">
+            <fieldSet>
+                <legend>Gender</legend>
+                <input id="male" type="radio" name="gender">
+		<label for="male">Male</label>
+	<input id="female" type="radio" name="gender">
+		<label for="female">Female</label>
+                
+            </fieldSet>
+        </div>
+        <div class="formvalidation">
+             Date Of Birth: <input type="date" placeholder="dd/mm/YYYY" name="exp_date" id="exp_date" >
+        </div>
+        
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+       
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
